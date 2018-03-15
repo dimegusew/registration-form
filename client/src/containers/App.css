@@ -1,0 +1,57 @@
+body{
+  display: flex;
+  justify-content: center;
+  background-color: #57606f;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes color-change {
+  from {
+    border-bottom:1px solid #ffffff;
+  }
+  to {
+    border-bottom:1px solid #808e9b;
+  }
+}
+
+.registration-box{
+  width: 450px;
+  min-height: 450px;
+  background-color: #2f3542;
+  justify-content: center;
+  margin-top: 50px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  border-radius: 5px;
+  animation-duration: 1s;
+animation-name: appear ;
+}
+
+input{
+  margin: 3px;
+  width: 240px;
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:300px;
+    border:none;
+    color: white;
+    border-bottom:1px solid white;
+    background-color: #2f3542;
+}
+
+
+input:focus {
+  outline: none;
+  animation-duration: 1s;
+  animation-name: color-change;
+}
+
+input:focus { border-bottom:1px solid #808e9b;}
